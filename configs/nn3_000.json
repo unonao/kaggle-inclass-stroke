@@ -1,0 +1,29 @@
+{
+    "features": [
+        "numerical",
+        "objects",
+        "pca"
+    ],
+    "model": "nn",
+    "params": {
+        "epochs": 50,
+        "bs": 32,
+        "hidden_size": 200,
+        "dropout_rate": 0.40,
+        "layer_num": 3,
+        "scheduler": "CosineAnnealingWarmRestarts",
+        "T_0": 5,
+        "lr": 3e-2,
+        "min_lr": 5e-4,
+        "momentum": 0.9,
+        "early_stopping_step": 10,
+        "early_stop": true,
+        "seed": 41,
+        "num_class": 2
+    },
+    "fold": 4,
+    "seed_num": 10,
+    "loss": "auc",
+    "target_name": "stroke",
+    "ID_name": "id"
+}

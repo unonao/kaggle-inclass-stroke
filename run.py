@@ -207,7 +207,6 @@ def main():
     logger.debug('=== OOF CV scores ===')
     logger.debug(f"\t auc:{auc_score}, acc: {acc_score}, logloss: {logloss_score}")
 
-    sub = sub.rename(columns={ID_name: 'Id', target_name:"label"})
     oof_df.to_csv(
         f'./data/output/oof_{config_filename}.csv',
         index=False
