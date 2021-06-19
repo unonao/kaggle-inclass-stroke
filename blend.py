@@ -9,7 +9,7 @@ sub[target_name] = 0
 base_subs = {
     "data/output/sub_lightgbm001.csv":1.,
     "data/output/sub_logistic_reg_000.csv":1.,
-    "data/output/sub_nn3_000.csv":3.,
+    "data/output/sub_nn3_000.csv":1.,
 }
 
 sum_weight = 0

@@ -1,0 +1,36 @@
+{
+    "features": [
+        "original",
+        "pca1",
+        "age_sysbp",
+        "female08_sysbp",
+        "female085_age"
+    ],
+    "stacking": true,
+    "stacking_name": [
+        "best_lightgbm",
+        "best_logreg_000",
+        "best_nn3",
+        "best_nn4"
+    ],
+    "model": "lightgbm",
+    "params": {
+        "learning_rate": 0.01,
+        "max_depth": 2,
+        "num_leaves": 2,
+        "boosting_type": "gbdt",
+        "feature_fraction": 0.1,
+        "lambda_l1": 0.1,
+        "lambda_l2": 0.1,
+        "objective": "multiclass",
+        "num_class": 2,
+        "metric": "auc_mu",
+        "seed": 41,
+        "num_threads": 7
+    },
+    "fold": 4,
+    "seed_num": 5,
+    "loss": "auc",
+    "target_name": "TenYearCHD",
+    "ID_name": "index"
+}
